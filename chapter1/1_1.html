@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>1.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Chapter 1</a>: 1.1</h1>
+  </header>
+  <section>
+    <h2>Problem:</h2>
+    <p>For most gases at standard or near standard conditions, the relationship among pressure, density, and temperature is given by the perfect gas equation of state: \(p=\rho RT\), where \(R\) is the specific gas constant. For air at near standard conditions, \(R=1716 \text{ ft}\cdot\text{lb}/(\text{slug}\cdot °R)\) in the English Engineering System of Units. (More details on the perfect gas equation of state are given in Chapter 7.) Using the above information, consider the following two cases:</p>
+    <ol type="a">
+      <li>At a given point on the wing of a Boeing 727, the pressure and temperature of the air are \(1.9\times 10^4 \text{N/m}^2\) and \(203\) K, respectively. Calculate the density at this point.</li>
+      <li>At a point in the test section of a supersonic wind tunnel, the pressure and density of the air are \(1058 \text{ lb}/\text{ft}^2\) and \(1.23\times 10^{-3} \text{ slug}/\text{ft}^3\), respectively. Calculate the temperature at this point.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Solution:</h2>
+    <p>This is a simple problem in which all that needs to be done is to use the ideal gas equation of state and take into account the conversion between the English and SI units.</p>
+    <ol type="a">
+      <li><p>From the equation of state we get: \(\rho=\frac{p}{RT}\), but in order to use it we need to convert to the English system of units: $$ T_{(\text{°R})}=T_{(\text{K})}\times \frac{9}{5}=203\times \frac{9}{5} \text{°R}=365.4\text{°R} $$ $$ p = 1.9\times 10^4 \frac{\text{N}}{\text{m}^2}\times\frac{1\text{ slug}}{14.5939 \text{ kg}}\times\frac{3.28084 \text{ ft}}{1 \text{ m}}= 4271.37\frac{ \text{lb}}{\text{m}^2}\times \frac{1 \text{ m}^2}{(3.28084 \text{ ft})^2}=396.8233\frac{\text{lb}}{\text{ft}^2}$$ </p>
+      <p>and then use the equation of state: $$\rho=\frac{396.8233\text{ lb}/\text{ft}^2}{1716 \text{ ft}\cdot\text{lb}/(\text{slug}\cdot °R)\cdot 365.4\text{°R} }=6.33\times 10^{-4}\frac{\text{slug}}{\text{ft}^3}$$</p></li>
+      
+      <li><p>From the equation of state we get: $$T=\frac{p}{R\rho}=\frac{396.8233\text{lb}/\text{ft}^2}{1716 \text{ ft}\cdot\text{lb}/(\text{slug}\cdot \text{°R})\cdot 1.23\times 10^{-3} \text{ slug}/\text{ft}^3}=188.01 \text{ °R}$$</p></li>
+    </ol>
+
+  </section>
+</body>
+</html>
